@@ -38,6 +38,7 @@ app.get('/entry', function(req, res) {
 });
 
 app.post('/new', function(req, res) {
+    // This will retrieve the data from a request as follows : greenpeace.international/new?name=BeesPush&desc=things are happenning!&start=2015&end=2017&url=http://google.com
     var name = req.body.name,
         desc = req.body.desc,
         name = req.body.start,
